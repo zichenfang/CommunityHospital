@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "WxApi.h"
+#import "PPLoginIndexViewController.h"
+#import "PPWebViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +20,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    /*ROLE* 1:医生；2:患者。请前往Targets-BuildSetting-Preprocessor中设置*/
+    //医生
+    if (ROLE == 1){
+        [WXApi registerApp:WechatAppID_Docotrs];
+        if ([TTUserInfoManager logined] == YES) {
+            
+        }
+        else{
+            
+        }
+    }
+    //患者
+    else{
+        [WXApi registerApp:WechatAppID_Patients];
+        if ([TTUserInfoManager logined] == YES) {
+            PPWebViewController *vc = [[PPWebViewController alloc] init];
+            self.window.rootViewController = vc;
+        }
+        else{
+            PPLoginIndexViewController *vc = [[PPLoginIndexViewController alloc] init];
+            self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+        }
+    }
+    
+    
     return YES;
 }
 

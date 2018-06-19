@@ -7,25 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEEA8A8B20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
+		AEEA8A8C20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
+		AEEA8A8D20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
+		AEEA8A9120D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */; };
+		AEEA8A9220D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */; };
+		AEEA8A9320D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */; };
+		AEEA8A9420D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */; };
+		AEEA8A9520D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */; };
+		AEEA8A9620D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */; };
+		AEEA8A9A20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */; };
+		AEEA8A9B20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */; };
+		AEEA8A9C20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */; };
+		AEEA8A9D20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */; };
+		AEEA8A9E20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */; };
+		AEEA8A9F20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */; };
+		AEEA8AA320D8E090005F2CD1 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */; };
+		AEEA8AA420D8E090005F2CD1 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */; };
+		AEEA8AA520D8E090005F2CD1 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */; };
+		AEEA8AA620D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
+		AEEA8AA720D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
+		AEEA8AA820D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
 		AEFE619020D89CF10019E5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE618F20D89CF10019E5B2 /* AppDelegate.m */; };
-		AEFE619320D89CF10019E5B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE619220D89CF10019E5B2 /* ViewController.m */; };
-		AEFE619620D89CF10019E5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619420D89CF10019E5B2 /* Main.storyboard */; };
 		AEFE619820D89CF40019E5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619720D89CF40019E5B2 /* Assets.xcassets */; };
-		AEFE619B20D89CF50019E5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619920D89CF50019E5B2 /* LaunchScreen.storyboard */; };
 		AEFE619E20D89CF50019E5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE619D20D89CF50019E5B2 /* main.m */; };
+		AEFE61A720D89DC90019E5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE619D20D89CF50019E5B2 /* main.m */; };
+		AEFE61A820D89DC90019E5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE618F20D89CF10019E5B2 /* AppDelegate.m */; };
+		AEFE61AC20D89DC90019E5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619720D89CF40019E5B2 /* Assets.xcassets */; };
+		AEFE61B520D89DD40019E5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE619D20D89CF50019E5B2 /* main.m */; };
+		AEFE61B620D89DD40019E5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE618F20D89CF10019E5B2 /* AppDelegate.m */; };
+		AEFE61BA20D89DD40019E5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619720D89CF40019E5B2 /* Assets.xcassets */; };
+		AEFE61D320D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */; };
+		AEFE61D420D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */; };
+		AEFE61D520D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */; };
+		AEFE61D620D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */; };
+		AEFE61D720D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */; };
+		AEFE61D820D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */; };
+		AEFE61D920D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */; };
+		AEFE61DA20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */; };
+		AEFE61DB20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */; };
+		AEFE61DC20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */; };
+		AEFE61DD20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */; };
+		AEFE61DE20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */; };
+		AEFE61DF20D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */; };
+		AEFE61E020D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */; };
+		AEFE61E120D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */; };
+		AEFE61E220D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */; };
+		AEFE61E320D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */; };
+		AEFE61E420D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */; };
+		AEFE61E520D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */; };
+		AEFE61E620D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */; };
+		AEFE61E720D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */; };
+		AFDB5344D5024875155D14D1 /* libPods-Patients.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */; };
+		F38C4E7B7A6F092355B81BB7 /* libPods-Doctors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB85831B05242D029B2E5D7 /* libPods-Doctors.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05E6FAF8939307BF71E8593F /* Pods-Patients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patients.release.xcconfig"; path = "Pods/Target Support Files/Pods-Patients/Pods-Patients.release.xcconfig"; sourceTree = "<group>"; };
+		3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Patients.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586EC9EA65DF34C48693F7AA /* Pods-Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doctors/Pods-Doctors.release.xcconfig"; sourceTree = "<group>"; };
+		8E94EE230F5189EB7CA57BE4 /* Pods-Patients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patients.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patients/Pods-Patients.debug.xcconfig"; sourceTree = "<group>"; };
+		AEEA8A8920D8CA9E005F2CD1 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
+		AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
+		AEEA8A8E20D8CC75005F2CD1 /* PPLoginIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLoginIndexViewController.h; sourceTree = "<group>"; };
+		AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLoginIndexViewController.m; sourceTree = "<group>"; };
+		AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPLoginIndexViewController.xib; sourceTree = "<group>"; };
+		AEEA8A9720D8CCA9005F2CD1 /* PPWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPWebViewController.h; sourceTree = "<group>"; };
+		AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPWebViewController.m; sourceTree = "<group>"; };
+		AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPWebViewController.xib; sourceTree = "<group>"; };
+		AEEA8AA020D8E090005F2CD1 /* PPLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLoginViewController.h; sourceTree = "<group>"; };
+		AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLoginViewController.m; sourceTree = "<group>"; };
+		AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPLoginViewController.xib; sourceTree = "<group>"; };
 		AEFE618B20D89CF10019E5B2 /* CommunityHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommunityHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFE618E20D89CF10019E5B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFE618F20D89CF10019E5B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEFE619120D89CF10019E5B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEFE619220D89CF10019E5B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AEFE619520D89CF10019E5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEFE619720D89CF40019E5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEFE619A20D89CF50019E5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEFE619C20D89CF50019E5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFE619D20D89CF50019E5B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEFE61B020D89DC90019E5B2 /* Doctors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doctors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFE61B120D89DC90019E5B2 /* CommunityHospital copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CommunityHospital copy-Info.plist"; path = "/Users/fangzichen/Documents/MoneyMoney/CommunityHospital/CommunityHospital copy-Info.plist"; sourceTree = "<absolute>"; };
+		AEFE61BE20D89DD40019E5B2 /* Patients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patients.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFE61BF20D89DD40019E5B2 /* Doctors copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Doctors copy-Info.plist"; path = "/Users/fangzichen/Documents/MoneyMoney/CommunityHospital/Doctors copy-Info.plist"; sourceTree = "<absolute>"; };
+		AEFE61C320D89F4A0019E5B2 /* NSString+MyCustomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyCustomString.h"; sourceTree = "<group>"; };
+		AEFE61C420D89F4A0019E5B2 /* UIImage+MyCustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MyCustomImage.h"; sourceTree = "<group>"; };
+		AEFE61C520D89F4A0019E5B2 /* UIViewController+MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MyViewController.h"; sourceTree = "<group>"; };
+		AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MyDate.m"; sourceTree = "<group>"; };
+		AEFE61C720D89F4A0019E5B2 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
+		AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MyCustomImage.m"; sourceTree = "<group>"; };
+		AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyCustomString.m"; sourceTree = "<group>"; };
+		AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MyViewController.m"; sourceTree = "<group>"; };
+		AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
+		AEFE61CC20D89F4A0019E5B2 /* NSDate+MyDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MyDate.h"; sourceTree = "<group>"; };
+		AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRequestOperationManager.m; sourceTree = "<group>"; };
+		AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUserInfoManager.m; sourceTree = "<group>"; };
+		AEFE61D020D89F4A0019E5B2 /* TTVenderHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVenderHeader.h; sourceTree = "<group>"; };
+		AEFE61D120D89F4A0019E5B2 /* TTRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRequestOperationManager.h; sourceTree = "<group>"; };
+		AEFE61D220D89F4A0019E5B2 /* TTUserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUserInfoManager.h; sourceTree = "<group>"; };
+		BDB85831B05242D029B2E5D7 /* libPods-Doctors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Doctors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDBCF7E481BD3409A943F75 /* Pods-Doctors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doctors/Pods-Doctors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +115,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEFE61A920D89DC90019E5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38C4E7B7A6F092355B81BB7 /* libPods-Doctors.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFE61B720D89DD40019E5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDB5344D5024875155D14D1 /* libPods-Patients.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EE391178EA629CF27CB9A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB85831B05242D029B2E5D7 /* libPods-Doctors.a */,
+				3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A40706206703B3412449300C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDBCF7E481BD3409A943F75 /* Pods-Doctors.debug.xcconfig */,
+				586EC9EA65DF34C48693F7AA /* Pods-Doctors.release.xcconfig */,
+				8E94EE230F5189EB7CA57BE4 /* Pods-Patients.debug.xcconfig */,
+				05E6FAF8939307BF71E8593F /* Pods-Patients.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AEFE618220D89CF10019E5B2 = {
 			isa = PBXGroup;
 			children = (
+				AEFE61C220D89F4A0019E5B2 /* category */,
+				AEFE61CD20D89F4A0019E5B2 /* vender */,
 				AEFE618D20D89CF10019E5B2 /* CommunityHospital */,
 				AEFE618C20D89CF10019E5B2 /* Products */,
+				AEFE61B120D89DC90019E5B2 /* CommunityHospital copy-Info.plist */,
+				AEFE61BF20D89DD40019E5B2 /* Doctors copy-Info.plist */,
+				A40706206703B3412449300C /* Pods */,
+				2EE391178EA629CF27CB9A7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				AEFE618B20D89CF10019E5B2 /* CommunityHospital.app */,
+				AEFE61B020D89DC90019E5B2 /* Doctors.app */,
+				AEFE61BE20D89DD40019E5B2 /* Patients.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,15 +183,67 @@
 			children = (
 				AEFE618E20D89CF10019E5B2 /* AppDelegate.h */,
 				AEFE618F20D89CF10019E5B2 /* AppDelegate.m */,
-				AEFE619120D89CF10019E5B2 /* ViewController.h */,
-				AEFE619220D89CF10019E5B2 /* ViewController.m */,
-				AEFE619420D89CF10019E5B2 /* Main.storyboard */,
+				AEEA8A8920D8CA9E005F2CD1 /* TTBaseViewController.h */,
+				AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */,
+				AEFE61C020D89F2D0019E5B2 /* 患者端 */,
+				AEFE61C120D89F2D0019E5B2 /* 医生端 */,
 				AEFE619720D89CF40019E5B2 /* Assets.xcassets */,
-				AEFE619920D89CF50019E5B2 /* LaunchScreen.storyboard */,
 				AEFE619C20D89CF50019E5B2 /* Info.plist */,
 				AEFE619D20D89CF50019E5B2 /* main.m */,
 			);
 			path = CommunityHospital;
+			sourceTree = "<group>";
+		};
+		AEFE61C020D89F2D0019E5B2 /* 患者端 */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA8A8E20D8CC75005F2CD1 /* PPLoginIndexViewController.h */,
+				AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */,
+				AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */,
+				AEEA8AA020D8E090005F2CD1 /* PPLoginViewController.h */,
+				AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */,
+				AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */,
+				AEEA8A9720D8CCA9005F2CD1 /* PPWebViewController.h */,
+				AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */,
+				AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */,
+			);
+			path = "患者端";
+			sourceTree = "<group>";
+		};
+		AEFE61C120D89F2D0019E5B2 /* 医生端 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "医生端";
+			sourceTree = "<group>";
+		};
+		AEFE61C220D89F4A0019E5B2 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				AEFE61C320D89F4A0019E5B2 /* NSString+MyCustomString.h */,
+				AEFE61C420D89F4A0019E5B2 /* UIImage+MyCustomImage.h */,
+				AEFE61C520D89F4A0019E5B2 /* UIViewController+MyViewController.h */,
+				AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */,
+				AEFE61C720D89F4A0019E5B2 /* UIColor+MyColor.h */,
+				AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */,
+				AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */,
+				AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */,
+				AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */,
+				AEFE61CC20D89F4A0019E5B2 /* NSDate+MyDate.h */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		AEFE61CD20D89F4A0019E5B2 /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */,
+				AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */,
+				AEFE61D020D89F4A0019E5B2 /* TTVenderHeader.h */,
+				AEFE61D120D89F4A0019E5B2 /* TTRequestOperationManager.h */,
+				AEFE61D220D89F4A0019E5B2 /* TTUserInfoManager.h */,
+			);
+			path = vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +264,44 @@
 			name = CommunityHospital;
 			productName = CommunityHospital;
 			productReference = AEFE618B20D89CF10019E5B2 /* CommunityHospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEFE61A420D89DC90019E5B2 /* Doctors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFE61AD20D89DC90019E5B2 /* Build configuration list for PBXNativeTarget "Doctors" */;
+			buildPhases = (
+				607EFA9508FCF8516F6A387C /* [CP] Check Pods Manifest.lock */,
+				AEFE61A520D89DC90019E5B2 /* Sources */,
+				AEFE61A920D89DC90019E5B2 /* Frameworks */,
+				AEFE61AA20D89DC90019E5B2 /* Resources */,
+				65DAADF2E33BA53E9EFEFFDD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Doctors;
+			productName = CommunityHospital;
+			productReference = AEFE61B020D89DC90019E5B2 /* Doctors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEFE61B220D89DD40019E5B2 /* Patients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFE61BB20D89DD40019E5B2 /* Build configuration list for PBXNativeTarget "Patients" */;
+			buildPhases = (
+				4FAD30670F266AA39F66B10D /* [CP] Check Pods Manifest.lock */,
+				AEFE61B320D89DD40019E5B2 /* Sources */,
+				AEFE61B720D89DD40019E5B2 /* Frameworks */,
+				AEFE61B820D89DD40019E5B2 /* Resources */,
+				D2E314627AD5E3465E740D95 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Patients;
+			productName = CommunityHospital;
+			productReference = AEFE61BE20D89DD40019E5B2 /* Patients.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,6 +332,8 @@
 			projectRoot = "";
 			targets = (
 				AEFE618A20D89CF10019E5B2 /* CommunityHospital */,
+				AEFE61A420D89DC90019E5B2 /* Doctors */,
+				AEFE61B220D89DD40019E5B2 /* Patients */,
 			);
 		};
 /* End PBXProject section */
@@ -128,45 +343,198 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFE619B20D89CF50019E5B2 /* LaunchScreen.storyboard in Resources */,
 				AEFE619820D89CF40019E5B2 /* Assets.xcassets in Resources */,
-				AEFE619620D89CF10019E5B2 /* Main.storyboard in Resources */,
+				AEEA8A9420D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEEA8AA620D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
+				AEEA8A9D20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFE61AA20D89DC90019E5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFE61AC20D89DC90019E5B2 /* Assets.xcassets in Resources */,
+				AEEA8A9520D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEEA8AA720D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
+				AEEA8A9E20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFE61B820D89DD40019E5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFE61BA20D89DD40019E5B2 /* Assets.xcassets in Resources */,
+				AEEA8A9620D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEEA8AA820D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
+				AEEA8A9F20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FAD30670F266AA39F66B10D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Patients-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		607EFA9508FCF8516F6A387C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doctors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65DAADF2E33BA53E9EFEFFDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Doctors/Pods-Doctors-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doctors/Pods-Doctors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E314627AD5E3465E740D95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Patients/Pods-Patients-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Patients/Pods-Patients-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEFE618720D89CF10019E5B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFE619320D89CF10019E5B2 /* ViewController.m in Sources */,
+				AEEA8AA320D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
+				AEFE61D920D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
+				AEEA8A9A20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AEFE61DF20D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEFE61DC20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
+				AEFE61E220D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
 				AEFE619E20D89CF50019E5B2 /* main.m in Sources */,
+				AEFE61D320D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
+				AEFE61E520D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
+				AEEA8A8B20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEFE61D620D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
+				AEEA8A9120D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
 				AEFE619020D89CF10019E5B2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEFE61A520D89DC90019E5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA8AA420D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
+				AEFE61DA20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
+				AEEA8A9B20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AEFE61E020D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEFE61DD20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
+				AEFE61E320D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
+				AEFE61A720D89DC90019E5B2 /* main.m in Sources */,
+				AEFE61D420D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
+				AEFE61E620D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
+				AEEA8A8C20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEFE61D720D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
+				AEEA8A9220D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
+				AEFE61A820D89DC90019E5B2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFE61B320D89DD40019E5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA8AA520D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
+				AEFE61DB20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
+				AEEA8A9C20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AEFE61E120D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEFE61DE20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
+				AEFE61E420D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
+				AEFE61B520D89DD40019E5B2 /* main.m in Sources */,
+				AEFE61D520D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
+				AEFE61E720D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
+				AEEA8A8D20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEFE61D820D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
+				AEEA8A9320D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
+				AEFE61B620D89DD40019E5B2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AEFE619420D89CF10019E5B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEFE619520D89CF10019E5B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AEFE619920D89CF50019E5B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEFE619A20D89CF50019E5B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AEFE619F20D89CF50019E5B2 /* Debug */ = {
@@ -220,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +640,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -284,7 +652,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
 				INFOPLIST_FILE = CommunityHospital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +670,105 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
 				INFOPLIST_FILE = CommunityHospital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FFF.CommunityHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEFE61AE20D89DC90019E5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDBCF7E481BD3409A943F75 /* Pods-Doctors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Doctors;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ROLE=1",
+				);
+				INFOPLIST_FILE = "CommunityHospital copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FFF.CommunityHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEFE61AF20D89DC90019E5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586EC9EA65DF34C48693F7AA /* Pods-Doctors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Doctors;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ROLE=1",
+				);
+				INFOPLIST_FILE = "CommunityHospital copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FFF.CommunityHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEFE61BC20D89DD40019E5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E94EE230F5189EB7CA57BE4 /* Pods-Patients.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Patients;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ROLE=2",
+				);
+				INFOPLIST_FILE = "Doctors copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FFF.CommunityHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEFE61BD20D89DD40019E5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E6FAF8939307BF71E8593F /* Pods-Patients.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Patients;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MYHX64H5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ROLE=2",
+				);
+				INFOPLIST_FILE = "Doctors copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +796,24 @@
 			buildConfigurations = (
 				AEFE61A220D89CF50019E5B2 /* Debug */,
 				AEFE61A320D89CF50019E5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFE61AD20D89DC90019E5B2 /* Build configuration list for PBXNativeTarget "Doctors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFE61AE20D89DC90019E5B2 /* Debug */,
+				AEFE61AF20D89DC90019E5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFE61BB20D89DD40019E5B2 /* Build configuration list for PBXNativeTarget "Patients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFE61BC20D89DD40019E5B2 /* Debug */,
+				AEFE61BD20D89DD40019E5B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

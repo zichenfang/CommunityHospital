@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPLoginViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1S-ST-2vG">
+                    <rect key="frame" x="0.0" y="34" width="42" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="system_back"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6it-bV-1b7" userLabel="buttons View">
+                    <rect key="frame" x="0.0" y="75" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-1w-uSy">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="密码登录">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-AG-aJo">
+                            <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="验证码登录">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bah-KY-ihS">
+                            <rect key="frame" x="250" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="人脸登录">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wp0-AG-aJo" secondAttribute="bottom" id="8DK-nW-GYM"/>
+                        <constraint firstItem="wp0-AG-aJo" firstAttribute="leading" secondItem="4pg-1w-uSy" secondAttribute="trailing" id="8bi-hW-qne"/>
+                        <constraint firstItem="4pg-1w-uSy" firstAttribute="top" secondItem="6it-bV-1b7" secondAttribute="top" id="Gy4-CD-TtU"/>
+                        <constraint firstAttribute="bottom" secondItem="bah-KY-ihS" secondAttribute="bottom" id="HY8-W9-c9f"/>
+                        <constraint firstItem="bah-KY-ihS" firstAttribute="leading" secondItem="wp0-AG-aJo" secondAttribute="trailing" id="Jbq-W5-smF"/>
+                        <constraint firstItem="wp0-AG-aJo" firstAttribute="top" secondItem="6it-bV-1b7" secondAttribute="top" id="YC0-0Y-Y6q"/>
+                        <constraint firstItem="bah-KY-ihS" firstAttribute="top" secondItem="6it-bV-1b7" secondAttribute="top" id="ZNg-bs-YPD"/>
+                        <constraint firstItem="wp0-AG-aJo" firstAttribute="width" secondItem="4pg-1w-uSy" secondAttribute="width" id="bnK-Fh-dzD"/>
+                        <constraint firstAttribute="height" constant="40" id="gMJ-9G-7Na"/>
+                        <constraint firstItem="bah-KY-ihS" firstAttribute="width" secondItem="wp0-AG-aJo" secondAttribute="width" id="mEe-ih-lgf"/>
+                        <constraint firstAttribute="bottom" secondItem="4pg-1w-uSy" secondAttribute="bottom" id="rnb-3g-p2z"/>
+                        <constraint firstAttribute="trailing" secondItem="bah-KY-ihS" secondAttribute="trailing" id="uIa-4p-yzt"/>
+                        <constraint firstItem="4pg-1w-uSy" firstAttribute="leading" secondItem="6it-bV-1b7" secondAttribute="leading" id="wgv-hd-fRN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6it-bV-1b7" secondAttribute="trailing" id="A4m-s6-fMB"/>
+                <constraint firstItem="6it-bV-1b7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A7d-RQ-hSK"/>
+                <constraint firstItem="6it-bV-1b7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="apv-tc-8MA"/>
+            </constraints>
+            <point key="canvasLocation" x="40" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="system_back" width="12" height="20"/>
+    </resources>
+</document>
