@@ -12,9 +12,20 @@
 - (id)init
 {
     self = [super init];
-    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"system_back"]];;
-    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"system_back"]];;
-//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -100) forBarMetrics:UIBarMetricsDefault];
+    UIImage *backImage;
+    //医生
+    if (ROLE == 1){
+        backImage = [UIImage imageNamed:@"system_back_green"];
+    }
+    //患者
+    else{
+        backImage = [UIImage imageNamed:@"system_back_gray"];
+    }
+    [[UINavigationBar appearance] setBackIndicatorImage:backImage];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backImage];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(20, 0) forBarMetrics:UIBarMetricsDefault];
     
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] init];
     barButtonItem.title = @"";
@@ -24,9 +35,9 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     //按钮，item颜色
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTintColor:[UIColor styleLightGreenColor]];
     //背景
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor styleBlackColor]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     //标题颜色
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor whiteColor]}];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;

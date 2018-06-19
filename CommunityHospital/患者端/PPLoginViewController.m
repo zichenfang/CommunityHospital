@@ -10,28 +10,59 @@
 
 @interface PPLoginViewController ()
 
+@property (strong, nonatomic) IBOutlet UIButton *login_password_Btn;
+@property (strong, nonatomic) IBOutlet UIButton *login_Vcode_Btn;
+@property (strong, nonatomic) IBOutlet UIView *passWordView;
+@property (strong, nonatomic) IBOutlet UIView *VCodeView;
+@property (strong, nonatomic) IBOutlet UIButton *forgetPasswordBtn;
+@property (strong, nonatomic) IBOutlet UIButton *loginBtn;
+
+
 @end
 
 @implementation PPLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    btn.frame = CGRectMake(0, 0, 60, 40);
+//
+//    btn.backgroundColor = [UIColor lightGrayColor];
+//    [btn setImage:[UIImage imageNamed:@"system_back_green"] forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"system_back_green"] style:UIBarButtonItemStylePlain target:self action:@selector(pop)];
+
+    self.passWordView.hidden = NO;
+    self.VCodeView.hidden = YES;
+    self.forgetPasswordBtn.hidden = NO;
+    
+    self.loginBtn.layer.masksToBounds = YES;
+    self.loginBtn.layer.cornerRadius = 25;
+    self.loginBtn.layer.borderWidth = 1;
+    self.loginBtn.layer.borderColor = [UIColor styleLightGreenColor].CGColor;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)loginWithpassword:(id)sender {
+    self.login_password_Btn.selected = YES;
+    self.login_Vcode_Btn.selected = NO;
+    self.passWordView.hidden = NO;
+    self.VCodeView.hidden = YES;
+    self.forgetPasswordBtn.hidden = NO;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)loginWithVCode:(id)sender {
+    self.login_password_Btn.selected = NO;
+    self.login_Vcode_Btn.selected = YES;
+    self.passWordView.hidden = YES;
+    self.VCodeView.hidden = NO;
+    self.forgetPasswordBtn.hidden = YES;
 }
-*/
+- (IBAction)loginWithFace:(id)sender {
+    
+}
+- (void)pop{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
