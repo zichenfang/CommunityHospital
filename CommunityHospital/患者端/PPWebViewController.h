@@ -9,5 +9,6 @@
 #import "TTBaseViewController.h"
 
 @interface PPWebViewController : TTBaseViewController
+@property (nonatomic,strong) NSString *url;
 
 @end

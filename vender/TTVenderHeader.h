@@ -44,9 +44,14 @@ typedef void (^TTBlock)(NSDictionary *info);
 /*支付失败*/
 #define kNoti_AliPayFailed @"NNNNOTI_006"
 
+/*发起融云连接请求*/
+#define kNoti_ConnectRongCloud @"NNNNOTI_100"
 
 //微信配置信息
 #define WechatAppID_Docotrs @""
 #define WechatAppID_Patients @""
+//融云key
+#define RongCloudKey @"y745wfm8yjfiv"
+
 
 #endif /* TTVenderHeader_h */

@@ -12,11 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPLoginViewController">
             <connections>
                 <outlet property="VCodeView" destination="tjr-8F-0Kh" id="bCS-rw-axm"/>
+                <outlet property="codeTF" destination="cTo-Zz-WJY" id="ewf-gS-cnS"/>
                 <outlet property="forgetPasswordBtn" destination="u0X-ao-QAB" id="YJU-69-dCi"/>
                 <outlet property="loginBtn" destination="3Z8-0a-Yhk" id="dGg-dM-6Lr"/>
                 <outlet property="login_Vcode_Btn" destination="wp0-AG-aJo" id="ynp-hJ-fzf"/>
                 <outlet property="login_password_Btn" destination="4pg-1w-uSy" id="ujc-Iu-bY7"/>
+                <outlet property="passWordTF" destination="eQg-9k-c37" id="kyO-pl-QEK"/>
                 <outlet property="passWordView" destination="KbR-T2-0Dr" id="Bke-Ol-Izw"/>
+                <outlet property="phoneTF" destination="jhb-vk-eTA" id="RiZ-sb-t2I"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

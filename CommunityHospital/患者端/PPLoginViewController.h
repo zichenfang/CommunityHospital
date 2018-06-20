@@ -9,5 +9,4 @@
 #import "TTBaseViewController.h"
 
 @interface PPLoginViewController : TTBaseViewController
-
 @end

@@ -28,6 +28,8 @@
 		AEEA8AA620D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
 		AEEA8AA720D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
 		AEEA8AA820D8E090005F2CD1 /* PPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */; };
+		AEEA8AAA20DA30D7005F2CD1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEA8AA920DA30D7005F2CD1 /* WebKit.framework */; };
+		AEEA8AAB20DA30DF005F2CD1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEA8AA920DA30D7005F2CD1 /* WebKit.framework */; };
 		AEFE619020D89CF10019E5B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE618F20D89CF10019E5B2 /* AppDelegate.m */; };
 		AEFE619820D89CF40019E5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFE619720D89CF40019E5B2 /* Assets.xcassets */; };
 		AEFE619E20D89CF50019E5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE619D20D89CF50019E5B2 /* main.m */; };
@@ -78,6 +80,7 @@
 		AEEA8AA020D8E090005F2CD1 /* PPLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLoginViewController.h; sourceTree = "<group>"; };
 		AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPLoginViewController.m; sourceTree = "<group>"; };
 		AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PPLoginViewController.xib; sourceTree = "<group>"; };
+		AEEA8AA920DA30D7005F2CD1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AEFE618B20D89CF10019E5B2 /* CommunityHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommunityHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFE618E20D89CF10019E5B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFE618F20D89CF10019E5B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEA8AAA20DA30D7005F2CD1 /* WebKit.framework in Frameworks */,
 				F38C4E7B7A6F092355B81BB7 /* libPods-Doctors.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEA8AAB20DA30DF005F2CD1 /* WebKit.framework in Frameworks */,
 				AFDB5344D5024875155D14D1 /* libPods-Patients.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +142,7 @@
 		2EE391178EA629CF27CB9A7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA8AA920DA30D7005F2CD1 /* WebKit.framework */,
 				BDB85831B05242D029B2E5D7 /* libPods-Doctors.a */,
 				3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "PPLoginViewController.h"
+#import "PPWebViewController.h"
 
 @interface PPLoginViewController ()
 
@@ -16,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet UIView *VCodeView;
 @property (strong, nonatomic) IBOutlet UIButton *forgetPasswordBtn;
 @property (strong, nonatomic) IBOutlet UIButton *loginBtn;
+@property (strong, nonatomic) IBOutlet UITextField *phoneTF;
+@property (strong, nonatomic) IBOutlet UITextField *passWordTF;
+@property (strong, nonatomic) IBOutlet UITextField *codeTF;
 
 
 @end
@@ -50,6 +54,16 @@
     self.passWordView.hidden = NO;
     self.VCodeView.hidden = YES;
     self.forgetPasswordBtn.hidden = NO;
+    if ([self.phoneTF.text isValidateMobile] == NO) {
+        [self.view makeToast:@"请输入11位手机号" duration:2 position:CSToastPositionCenter];
+        return;
+    }
+    if (self.passWordTF.text.absoluteString.length==0) {
+        [self.view makeToast:@"请输入密码" duration:2 position:CSToastPositionCenter];
+        return;
+    }
+    [self requestLoginWithPassword];
+    
 }
 - (IBAction)loginWithVCode:(id)sender {
     self.login_password_Btn.selected = NO;
@@ -64,5 +78,30 @@
 - (void)pop{
     [self.navigationController popViewControllerAnimated:YES];
 }
-
+- (void)requestLoginWithPassword{
+    NSMutableDictionary *para = [NSMutableDictionary dictionary];
+    [para setObject:self.phoneTF.text forKey:@"userName"];
+    [para setObject:self.passWordTF.text.absoluteString.md5_32Bit_String forKey:@"password"];
+    [self.view makeToastActivity:CSToastPositionCenter];
+    [TTRequestOperationManager POST:API_USER_LOGIN_WITH_PASSWORD Parameters:para Success:^(NSDictionary *responseJsonObject) {
+        [self.view hideToastActivity];
+        NSString *code = [responseJsonObject string_ForKey:@"code"];
+        if ([code isEqualToString:@"200"]) {
+            [self.view makeToast:@"登录成功" duration:2 position:CSToastPositionCenter];
+            NSDictionary *userInfo = [responseJsonObject dictionary_ForKey:@"data"];
+            [TTUserInfoManager setUserInfo:userInfo];
+            [TTUserInfoManager setLogined:YES];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kNoti_ConnectRongCloud object:nil];
+            PPWebViewController *mainVC = [[PPWebViewController alloc] init];
+            mainVC.url = @"http://www.qq.com/";
+            [UIApplication sharedApplication].keyWindow.rootViewController = mainVC;
+        }
+        else{
+            NSString *msg = [responseJsonObject string_ForKey:@"msg"];
+            [self.view makeToast:msg duration:2 position:CSToastPositionCenter];
+        }
+    } Failure:^(NSError *error) {
+        [self.view hideToastActivity];
+    }];
+}
 @end
