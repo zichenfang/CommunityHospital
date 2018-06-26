@@ -36,6 +36,7 @@
 //    [config.userContentController addScriptMessageHandler:self name:@"logOut"];
 //    [config.userContentController addScriptMessageHandler:self name:@"getWechatUserInfo"];
     [config.userContentController addScriptMessageHandler:self name:@"login"];
+    [config.userContentController addScriptMessageHandler:self name:@"registSuccess"];
 
     
     
@@ -63,6 +64,8 @@
 //    //添加网络通知
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshWeb) name:@"refreshWeb" object:nil];
     [self refreshWeb];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(test)];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -76,12 +79,26 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
     NSLog(@"%@",self.url);
 }
+- (void)test{
+    [self.navigationController popViewControllerAnimated:NO];
+    if (self.handler) {
+        self.handler(@{});
+    }
+}
+//MARK:JS
 - (void)userContentController:(WKUserContentController *)userContentController
       didReceiveScriptMessage:(WKScriptMessage *)message {
     NSLog(@"message.name =%@",message.name);
     NSLog(@"message.body =%@",message.body);
     if ([message.name isEqualToString:@"login"]) {
         [self login];
+    }
+    //注册账号成功
+    else if ([message.name isEqualToString:@"registSuccess"]){
+        [self.navigationController popViewControllerAnimated:NO];
+        if (self.handler) {
+            self.handler(@{});
+        }
     }
     //    [self.view makeToast:[NSString stringWithFormat:@"方法名：%@,\n 参数:%@",message.name,message.body]];
     
@@ -153,13 +170,16 @@
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
 }
-//MARK:actions
+//MARK:登录
 - (void)login{
     PPLoginIndexViewController *vc = [[PPLoginIndexViewController alloc] init];
     //登录成功之后的回调
     vc.handler = ^(NSDictionary *info) {
         NSLog(@"登录成功之后的回调");
+        [self refreshWeb];
     };
     [self.navigationController pushViewController:vc animated:YES];
 }
+//MARK:微信登录
+
 @end

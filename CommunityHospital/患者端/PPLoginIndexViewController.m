@@ -9,6 +9,7 @@
 #import "PPLoginIndexViewController.h"
 #import "PPWebViewController.h"
 #import "PPLoginViewController.h"
+#import "WxApi.h"
 
 
 
@@ -42,10 +43,20 @@
 - (IBAction)regist:(id)sender {
     PPWebViewController *mainVC = [[PPWebViewController alloc] init];
     mainVC.url = URL_PATIENT_REGIST;
+    mainVC.handler = ^(NSDictionary *info) {
+      //注册成功后，跳转到登录页面
+        [self login:nil];
+    };
     [self.navigationController pushViewController:mainVC animated:YES];
 }
 - (IBAction)deal:(id)sender {
 }
 - (IBAction)wechatLogin:(id)sender {
+    //构造SendAuthReq结构体
+    SendAuthReq* req =[[SendAuthReq alloc]init];
+    req.scope = @"snsapi_userinfo";
+    req.state = @"zsm_jt";
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    [WXApi sendReq:req];
 }
 @end

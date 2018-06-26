@@ -23,16 +23,19 @@
 //MARK: ●患者端用户注册页面URL
 #define URL_PATIENT_REGIST  @"http://bh.52pinka.com/m-Wap/Register"
 //MARK: ●患者端主页面页面URL
-#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/Login/Entrance"
+//#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/Login/Entrance"//用来测试调起原生登录页面
+#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/"
+
+
+
 //MARK: ●患者端人脸登录页面URL
 #define URL_PATIENT_LOGIN_FACE  @"http://www.baidu.com/"
 //MARK: ●患者端找回密码页面URL
 #define URL_PATIENT_RESET_PASSWORD  @"http://bh.52pinka.com/m-wap/login/ForgotPassword"
 //MARK: ●患者验证码登录 获取验证码 API
-#define URL_PATIENT_GET_MSG_CODE  @""
+#define URL_PATIENT_GET_MSG_CODE  @"api/Login/SendPhoneCheckCode"
 //MARK: ●患者验证码登录 API
-#define URL_PATIENT_LOGIN_VCODE  @""
-
+#define URL_PATIENT_LOGIN_VCODE  @"api/Login/getUser"
 
 
 //MARK: ●医生端用户注册页面URL
@@ -45,6 +48,8 @@
 #define URL_DOCTOR_RESET_PASSWORD  @"http://www.baidu.com/"
 //MARK: ●医生端登录 API
 #define URL_PATIENT_LOGIN_USERNAME_PASSWORD  @""
+
+
 
 
 @interface TTRequestOperationManager : NSObject

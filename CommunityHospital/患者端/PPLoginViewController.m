@@ -31,7 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"system_back_green"] style:UIBarButtonItemStylePlain target:self action:@selector(pop)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"system_back_green"] style:UIBarButtonItemStylePlain target:self action:@selector(pop)];
 
     self.passWordView.hidden = NO;
     self.VCodeView.hidden = YES;
@@ -74,12 +74,12 @@
 //MARK:点击登录按钮
 - (IBAction)loginBtnTouched:(id)sender {
     [self.view endEditing:YES];
+    if ([self.phoneTF.text isValidateMobile] == NO) {
+        [self.view makeToast:@"请输入11位手机号" duration:2 position:CSToastPositionCenter];
+        return;
+    }
     //密码登录验证表单
     if (self.login_password_Btn.selected ==YES) {
-//        if ([self.phoneTF.text isValidateMobile] == NO) {
-//            [self.view makeToast:@"请输入11位手机号" duration:2 position:CSToastPositionCenter];
-//            return;
-//        }
         if (self.passWordTF.text.absoluteString.length==0) {
             [self.view makeToast:@"请输入密码" duration:2 position:CSToastPositionCenter];
             return;
@@ -88,7 +88,11 @@
     }
     //验证码登录验证表单
     else{
-        
+        if (self.codeTF.text.absoluteString.length<4) {
+            [self.view makeToast:@"请输入验证码" duration:2 position:CSToastPositionCenter];
+            return;
+        }
+        [self requestLoginWithVCode];
     }
 }
 - (void)pop{
@@ -133,8 +137,14 @@
 }
 //MARK:获取验证码
 - (IBAction)obtainMsgCode:(id)sender {
+    [self.view endEditing:YES];
+    if ([self.phoneTF.text isValidateMobile] == NO) {
+        [self.view makeToast:@"请输入11位手机号码" duration:2 position:CSToastPositionCenter];
+        return;
+    }
+    
     NSMutableDictionary *para = [NSMutableDictionary dictionary];
-    [para setObject:@"zz" forKey:@""];
+    [para setObject:self.phoneTF.text forKey:@"contact"];
     self.codeBtn.userInteractionEnabled = NO;
     [self.view makeToastActivity:CSToastPositionCenter];
     [TTRequestOperationManager GET:URL_PATIENT_GET_MSG_CODE Parameters:para Success:^(NSDictionary *responseJsonObject) {
@@ -178,6 +188,37 @@
         }
     });
     dispatch_resume(_timer);
+}
+//MARK:验证码登录
+- (void)requestLoginWithVCode{
+    NSMutableDictionary *para = [NSMutableDictionary dictionary];
+    [para setObject:self.phoneTF.text.absoluteString forKey:@"userName"];
+    [para setObject:self.codeTF.text forKey:@"checkcode"];
+    [self.view makeToastActivity:CSToastPositionCenter];
+    self.view.userInteractionEnabled = NO;
+    [TTRequestOperationManager GET:URL_PATIENT_LOGIN_VCODE Parameters:para Success:^(NSDictionary *responseJsonObject) {
+        [self.view hideToastActivity];
+        self.view.userInteractionEnabled = YES;
+        NSString *code = [responseJsonObject string_ForKey:@"code"];
+        if ([code isEqualToString:@"200"]) {
+            NSDictionary *userInfo = [responseJsonObject dictionary_ForKey:@"data"];
+            [TTUserInfoManager setUserInfo:userInfo];
+            [TTUserInfoManager setLogined:YES];
+            [TTUserInfoManager setAccount:self.phoneTF.text];
+            [[NSNotificationCenter defaultCenter] postNotificationName:kNoti_ConnectRongCloud object:nil];
+            if (self.handler) {
+                self.handler(@{});
+            }
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        }
+        else{
+            NSString *msg = [responseJsonObject string_ForKey:@"msg"];
+            [self.view makeToast:msg duration:2 position:CSToastPositionCenter];
+        }
+    } Failure:^(NSError *error) {
+        [self.view hideToastActivity];
+        self.view.userInteractionEnabled = YES;
+    }];
 }
 
 @end
