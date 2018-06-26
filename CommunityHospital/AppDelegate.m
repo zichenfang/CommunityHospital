@@ -11,6 +11,8 @@
 #import "PPLoginIndexViewController.h"
 #import "PPWebViewController.h"
 #import <RongIMKit/RongIMKit.h>
+#import "DDLoginViewController.h"
+#import "DDWebViewController.h"
 
 
 @interface AppDelegate ()
@@ -26,27 +28,28 @@
     [[RCIM sharedRCIM] initWithAppKey:RongCloudKey];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectRongCloudIM) name:kNoti_ConnectRongCloud object:nil];
     /*ROLE* 1:医生；2:患者。请前往Targets-BuildSetting-Preprocessor中设置*/
-    //医生
+    //医生（医生端为强制登录）
     if (ROLE == 1){
         [WXApi registerApp:WechatAppID_Docotrs];
 
         if ([TTUserInfoManager logined] == YES) {
-            
+            //进入医生首页
+            DDWebViewController *vc = [[DDWebViewController alloc] init];
         }
         else{
             
         }
     }
-    //患者
+    //患者（无需强制登录）
     else{
         [WXApi registerApp:WechatAppID_Patients];
+        PPWebViewController *vc = [[PPWebViewController alloc] init];
+        vc.navigaitonBarHidden = YES;
+        vc.url = URL_PATIENT_MAIN;
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+        //如果已经登录了，则连接融云
         if ([TTUserInfoManager logined] == YES) {
-            PPWebViewController *vc = [[PPWebViewController alloc] init];
-            self.window.rootViewController = vc;
-        }
-        else{
-            PPLoginIndexViewController *vc = [[PPLoginIndexViewController alloc] init];
-            self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self connectRongCloudIM];
         }
     }
     
@@ -54,8 +57,7 @@
     return YES;
 }
 - (void)connectRongCloudIM{
-    NSString *rongToken = [[TTUserInfoManager userInfo] string_ForKey:@"rongToken"];
-    rongToken = @"";
+    NSString *rongToken = [[TTUserInfoManager userInfo] string_ForKey:@"RongCloudToken"];
     [[RCIM sharedRCIM] connectWithToken:rongToken success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
     } error:^(RCConnectErrorCode status) {

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEC3B50D20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
+		AEC3B50E20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
+		AEC3B50F20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
+		AEC3B51020DDE1720042C39E /* DDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */; };
+		AEC3B51120DDE1720042C39E /* DDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */; };
+		AEC3B51220DDE1720042C39E /* DDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */; };
+		AEC3B51620DDE1980042C39E /* DDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B51420DDE1980042C39E /* DDWebViewController.m */; };
+		AEC3B51720DDE1980042C39E /* DDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B51420DDE1980042C39E /* DDWebViewController.m */; };
+		AEC3B51820DDE1980042C39E /* DDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B51420DDE1980042C39E /* DDWebViewController.m */; };
+		AEC3B51920DDE1980042C39E /* DDWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B51520DDE1980042C39E /* DDWebViewController.xib */; };
+		AEC3B51A20DDE1980042C39E /* DDWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B51520DDE1980042C39E /* DDWebViewController.xib */; };
+		AEC3B51B20DDE1980042C39E /* DDWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3B51520DDE1980042C39E /* DDWebViewController.xib */; };
 		AEEA8A8B20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
 		AEEA8A8C20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
 		AEEA8A8D20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */; };
@@ -69,6 +81,12 @@
 		3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Patients.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586EC9EA65DF34C48693F7AA /* Pods-Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doctors/Pods-Doctors.release.xcconfig"; sourceTree = "<group>"; };
 		8E94EE230F5189EB7CA57BE4 /* Pods-Patients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patients.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patients/Pods-Patients.debug.xcconfig"; sourceTree = "<group>"; };
+		AEC3B50A20DDE1720042C39E /* DDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLoginViewController.h; sourceTree = "<group>"; };
+		AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDLoginViewController.m; sourceTree = "<group>"; };
+		AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDLoginViewController.xib; sourceTree = "<group>"; };
+		AEC3B51320DDE1980042C39E /* DDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDWebViewController.h; sourceTree = "<group>"; };
+		AEC3B51420DDE1980042C39E /* DDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDWebViewController.m; sourceTree = "<group>"; };
+		AEC3B51520DDE1980042C39E /* DDWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDWebViewController.xib; sourceTree = "<group>"; };
 		AEEA8A8920D8CA9E005F2CD1 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
 		AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBaseViewController.m; sourceTree = "<group>"; };
 		AEEA8A8E20D8CC75005F2CD1 /* PPLoginIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPLoginIndexViewController.h; sourceTree = "<group>"; };
@@ -191,8 +209,8 @@
 				AEFE618F20D89CF10019E5B2 /* AppDelegate.m */,
 				AEEA8A8920D8CA9E005F2CD1 /* TTBaseViewController.h */,
 				AEEA8A8A20D8CA9E005F2CD1 /* TTBaseViewController.m */,
-				AEFE61C020D89F2D0019E5B2 /* 患者端 */,
 				AEFE61C120D89F2D0019E5B2 /* 医生端 */,
+				AEFE61C020D89F2D0019E5B2 /* 患者端 */,
 				AEFE619720D89CF40019E5B2 /* Assets.xcassets */,
 				AEFE619C20D89CF50019E5B2 /* Info.plist */,
 				AEFE619D20D89CF50019E5B2 /* main.m */,
@@ -203,15 +221,15 @@
 		AEFE61C020D89F2D0019E5B2 /* 患者端 */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA8A9720D8CCA9005F2CD1 /* PPWebViewController.h */,
+				AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */,
+				AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */,
 				AEEA8A8E20D8CC75005F2CD1 /* PPLoginIndexViewController.h */,
 				AEEA8A8F20D8CC75005F2CD1 /* PPLoginIndexViewController.m */,
 				AEEA8A9020D8CC75005F2CD1 /* PPLoginIndexViewController.xib */,
 				AEEA8AA020D8E090005F2CD1 /* PPLoginViewController.h */,
 				AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */,
 				AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */,
-				AEEA8A9720D8CCA9005F2CD1 /* PPWebViewController.h */,
-				AEEA8A9820D8CCA9005F2CD1 /* PPWebViewController.m */,
-				AEEA8A9920D8CCA9005F2CD1 /* PPWebViewController.xib */,
 			);
 			path = "患者端";
 			sourceTree = "<group>";
@@ -219,6 +237,12 @@
 		AEFE61C120D89F2D0019E5B2 /* 医生端 */ = {
 			isa = PBXGroup;
 			children = (
+				AEC3B50A20DDE1720042C39E /* DDLoginViewController.h */,
+				AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */,
+				AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */,
+				AEC3B51320DDE1980042C39E /* DDWebViewController.h */,
+				AEC3B51420DDE1980042C39E /* DDWebViewController.m */,
+				AEC3B51520DDE1980042C39E /* DDWebViewController.xib */,
 			);
 			path = "医生端";
 			sourceTree = "<group>";
@@ -227,14 +251,14 @@
 			isa = PBXGroup;
 			children = (
 				AEFE61C320D89F4A0019E5B2 /* NSString+MyCustomString.h */,
-				AEFE61C420D89F4A0019E5B2 /* UIImage+MyCustomImage.h */,
 				AEFE61C520D89F4A0019E5B2 /* UIViewController+MyViewController.h */,
+				AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */,
 				AEFE61C620D89F4A0019E5B2 /* NSDate+MyDate.m */,
 				AEFE61C720D89F4A0019E5B2 /* UIColor+MyColor.h */,
 				AEFE61CB20D89F4A0019E5B2 /* UIColor+MyColor.m */,
+				AEFE61C420D89F4A0019E5B2 /* UIImage+MyCustomImage.h */,
 				AEFE61C820D89F4A0019E5B2 /* UIImage+MyCustomImage.m */,
 				AEFE61C920D89F4A0019E5B2 /* NSString+MyCustomString.m */,
-				AEFE61CA20D89F4A0019E5B2 /* UIViewController+MyViewController.m */,
 				AEFE61CC20D89F4A0019E5B2 /* NSDate+MyDate.h */,
 			);
 			path = category;
@@ -243,11 +267,11 @@
 		AEFE61CD20D89F4A0019E5B2 /* vender */ = {
 			isa = PBXGroup;
 			children = (
+				AEFE61D120D89F4A0019E5B2 /* TTRequestOperationManager.h */,
 				AEFE61CE20D89F4A0019E5B2 /* TTRequestOperationManager.m */,
+				AEFE61D220D89F4A0019E5B2 /* TTUserInfoManager.h */,
 				AEFE61CF20D89F4A0019E5B2 /* TTUserInfoManager.m */,
 				AEFE61D020D89F4A0019E5B2 /* TTVenderHeader.h */,
-				AEFE61D120D89F4A0019E5B2 /* TTRequestOperationManager.h */,
-				AEFE61D220D89F4A0019E5B2 /* TTUserInfoManager.h */,
 			);
 			path = vender;
 			sourceTree = "<group>";
@@ -350,7 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFE619820D89CF40019E5B2 /* Assets.xcassets in Resources */,
+				AEC3B51920DDE1980042C39E /* DDWebViewController.xib in Resources */,
 				AEEA8A9420D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEC3B51020DDE1720042C39E /* DDLoginViewController.xib in Resources */,
 				AEEA8AA620D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
 				AEEA8A9D20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
 			);
@@ -361,7 +387,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFE61AC20D89DC90019E5B2 /* Assets.xcassets in Resources */,
+				AEC3B51A20DDE1980042C39E /* DDWebViewController.xib in Resources */,
 				AEEA8A9520D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEC3B51120DDE1720042C39E /* DDLoginViewController.xib in Resources */,
 				AEEA8AA720D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
 				AEEA8A9E20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
 			);
@@ -372,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFE61BA20D89DD40019E5B2 /* Assets.xcassets in Resources */,
+				AEC3B51B20DDE1980042C39E /* DDWebViewController.xib in Resources */,
 				AEEA8A9620D8CC75005F2CD1 /* PPLoginIndexViewController.xib in Resources */,
+				AEC3B51220DDE1720042C39E /* DDLoginViewController.xib in Resources */,
 				AEEA8AA820D8E090005F2CD1 /* PPLoginViewController.xib in Resources */,
 				AEEA8A9F20D8CCA9005F2CD1 /* PPWebViewController.xib in Resources */,
 			);
@@ -488,12 +518,14 @@
 				AEFE61D920D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9A20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
 				AEFE61DF20D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEC3B50D20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DC20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
 				AEFE61E220D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
 				AEFE619E20D89CF50019E5B2 /* main.m in Sources */,
 				AEFE61D320D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
 				AEFE61E520D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
 				AEEA8A8B20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEC3B51620DDE1980042C39E /* DDWebViewController.m in Sources */,
 				AEFE61D620D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
 				AEEA8A9120D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
 				AEFE619020D89CF10019E5B2 /* AppDelegate.m in Sources */,
@@ -508,12 +540,14 @@
 				AEFE61DA20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9B20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
 				AEFE61E020D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEC3B50E20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DD20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
 				AEFE61E320D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
 				AEFE61A720D89DC90019E5B2 /* main.m in Sources */,
 				AEFE61D420D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
 				AEFE61E620D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
 				AEEA8A8C20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEC3B51720DDE1980042C39E /* DDWebViewController.m in Sources */,
 				AEFE61D720D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
 				AEEA8A9220D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
 				AEFE61A820D89DC90019E5B2 /* AppDelegate.m in Sources */,
@@ -528,12 +562,14 @@
 				AEFE61DB20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9C20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
 				AEFE61E120D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
+				AEC3B50F20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DE20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
 				AEFE61E420D89F4A0019E5B2 /* TTRequestOperationManager.m in Sources */,
 				AEFE61B520D89DD40019E5B2 /* main.m in Sources */,
 				AEFE61D520D89F4A0019E5B2 /* NSDate+MyDate.m in Sources */,
 				AEFE61E720D89F4A0019E5B2 /* TTUserInfoManager.m in Sources */,
 				AEEA8A8D20D8CA9F005F2CD1 /* TTBaseViewController.m in Sources */,
+				AEC3B51820DDE1980042C39E /* DDWebViewController.m in Sources */,
 				AEFE61D820D89F4A0019E5B2 /* UIImage+MyCustomImage.m in Sources */,
 				AEEA8A9320D8CC75005F2CD1 /* PPLoginIndexViewController.m in Sources */,
 				AEFE61B620D89DD40019E5B2 /* AppDelegate.m in Sources */,

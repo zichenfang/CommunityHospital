@@ -96,7 +96,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OM2-SI-38o">
-                    <rect key="frame" x="147" y="82" width="80" height="80"/>
+                    <rect key="frame" x="147" y="20" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="yLQ-aZ-t4V"/>
                         <constraint firstAttribute="height" constant="80" id="yW4-ty-TEt"/>
@@ -110,7 +110,7 @@
                 <constraint firstItem="l8j-sa-2DD" firstAttribute="top" secondItem="sds-OL-RBz" secondAttribute="bottom" constant="20" id="FTm-qN-SN0"/>
                 <constraint firstAttribute="trailing" secondItem="sds-OL-RBz" secondAttribute="trailing" constant="30" id="MYv-f0-sUK"/>
                 <constraint firstItem="ke5-gC-jLu" firstAttribute="top" secondItem="l8j-sa-2DD" secondAttribute="bottom" constant="20" id="Q5Z-Lo-nCw"/>
-                <constraint firstItem="OM2-SI-38o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="82" id="TDd-9c-Ma1"/>
+                <constraint firstItem="OM2-SI-38o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="TDd-9c-Ma1"/>
                 <constraint firstAttribute="bottom" secondItem="W1I-wq-moU" secondAttribute="bottom" constant="20" id="XUD-wz-Pd6"/>
                 <constraint firstItem="ke5-gC-jLu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cfe-w9-qgP"/>
                 <constraint firstAttribute="bottom" secondItem="ke5-gC-jLu" secondAttribute="bottom" constant="200" id="ilD-vh-V23"/>

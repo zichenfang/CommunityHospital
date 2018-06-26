@@ -60,6 +60,8 @@
     [manager GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *cacheDic = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
         NSLog(@"URLString =%@ \n parameters =%@ \n %@ 's cacheDic  =%@\n ",URLString,parameters,[parameters string_ForKey:@"method"],cacheDic);
+        NSLog(@"responseObject.NSUTF8StringEncoding == %@",[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+
         [TTRequestOperationManager logOtherData:responseObject];
         mySuccess(cacheDic.noNullObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPLoginViewController">
             <connections>
                 <outlet property="VCodeView" destination="tjr-8F-0Kh" id="bCS-rw-axm"/>
+                <outlet property="codeBtn" destination="DeM-PH-3f6" id="7L9-Tj-F62"/>
                 <outlet property="codeTF" destination="cTo-Zz-WJY" id="ewf-gS-cnS"/>
                 <outlet property="forgetPasswordBtn" destination="u0X-ao-QAB" id="YJU-69-dCi"/>
                 <outlet property="loginBtn" destination="3Z8-0a-Yhk" id="dGg-dM-6Lr"/>
@@ -100,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXC-UV-lkQ" userLabel="line Label">
                                             <rect key="frame" x="0.0" y="43" width="315" height="2"/>
@@ -185,6 +186,9 @@
                                             <state key="normal" title="获取验证码">
                                                 <color key="titleColor" red="0.0" green="0.72549019609999998" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="obtainMsgCode:" destination="-1" eventType="touchUpInside" id="ldh-w1-tcQ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -215,6 +219,9 @@
                                     <state key="normal" title="登录">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="loginBtnTouched:" destination="-1" eventType="touchUpInside" id="at0-YU-8d5"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0X-ao-QAB">
                                     <rect key="frame" x="137" y="292" width="100" height="50"/>
@@ -225,6 +232,9 @@
                                     <state key="normal" title="忘记密码">
                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="forgetPassWord:" destination="-1" eventType="touchUpInside" id="YHz-Nr-x6O"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

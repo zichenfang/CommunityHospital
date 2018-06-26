@@ -32,16 +32,17 @@
     self.registBtn.layer.borderWidth = 1;
     self.registBtn.layer.borderColor = [UIColor styleLightGreenColor].CGColor;
 }
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
 
 - (IBAction)login:(id)sender {
     PPLoginViewController *vc = [[PPLoginViewController alloc] init];
+    vc.handler = self.handler;
     [self.navigationController pushViewController:vc animated:YES];
 }
+//患者注册
 - (IBAction)regist:(id)sender {
+    PPWebViewController *mainVC = [[PPWebViewController alloc] init];
+    mainVC.url = URL_PATIENT_REGIST;
+    [self.navigationController pushViewController:mainVC animated:YES];
 }
 - (IBAction)deal:(id)sender {
 }
