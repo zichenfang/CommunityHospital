@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4EBFA120E721290058522D /* PPConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFA020E721290058522D /* PPConversationViewController.m */; };
+		AE4EBFA220E721290058522D /* PPConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFA020E721290058522D /* PPConversationViewController.m */; };
+		AE4EBFA320E721290058522D /* PPConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFA020E721290058522D /* PPConversationViewController.m */; };
 		AEC3B50D20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
 		AEC3B50E20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
 		AEC3B50F20DDE1720042C39E /* DDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */; };
@@ -81,6 +84,8 @@
 		3046F412CFD3CF5D28F1CDF4 /* libPods-Patients.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Patients.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		586EC9EA65DF34C48693F7AA /* Pods-Doctors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doctors/Pods-Doctors.release.xcconfig"; sourceTree = "<group>"; };
 		8E94EE230F5189EB7CA57BE4 /* Pods-Patients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Patients.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Patients/Pods-Patients.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4EBF9F20E721290058522D /* PPConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPConversationViewController.h; sourceTree = "<group>"; };
+		AE4EBFA020E721290058522D /* PPConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPConversationViewController.m; sourceTree = "<group>"; };
 		AEC3B50A20DDE1720042C39E /* DDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLoginViewController.h; sourceTree = "<group>"; };
 		AEC3B50B20DDE1720042C39E /* DDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDLoginViewController.m; sourceTree = "<group>"; };
 		AEC3B50C20DDE1720042C39E /* DDLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDLoginViewController.xib; sourceTree = "<group>"; };
@@ -230,6 +235,8 @@
 				AEEA8AA020D8E090005F2CD1 /* PPLoginViewController.h */,
 				AEEA8AA120D8E090005F2CD1 /* PPLoginViewController.m */,
 				AEEA8AA220D8E090005F2CD1 /* PPLoginViewController.xib */,
+				AE4EBF9F20E721290058522D /* PPConversationViewController.h */,
+				AE4EBFA020E721290058522D /* PPConversationViewController.m */,
 			);
 			path = "患者端";
 			sourceTree = "<group>";
@@ -517,6 +524,7 @@
 				AEEA8AA320D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
 				AEFE61D920D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9A20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AE4EBFA120E721290058522D /* PPConversationViewController.m in Sources */,
 				AEFE61DF20D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
 				AEC3B50D20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DC20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
@@ -539,6 +547,7 @@
 				AEEA8AA420D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
 				AEFE61DA20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9B20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AE4EBFA220E721290058522D /* PPConversationViewController.m in Sources */,
 				AEFE61E020D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
 				AEC3B50E20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DD20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,
@@ -561,6 +570,7 @@
 				AEEA8AA520D8E090005F2CD1 /* PPLoginViewController.m in Sources */,
 				AEFE61DB20D89F4A0019E5B2 /* NSString+MyCustomString.m in Sources */,
 				AEEA8A9C20D8CCA9005F2CD1 /* PPWebViewController.m in Sources */,
+				AE4EBFA320E721290058522D /* PPConversationViewController.m in Sources */,
 				AEFE61E120D89F4A0019E5B2 /* UIColor+MyColor.m in Sources */,
 				AEC3B50F20DDE1720042C39E /* DDLoginViewController.m in Sources */,
 				AEFE61DE20D89F4A0019E5B2 /* UIViewController+MyViewController.m in Sources */,

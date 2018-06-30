@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPWebViewController">
             <connections>
                 <outlet property="refershView" destination="6L6-Z3-fy0" id="fQL-pV-m5P"/>
+                <outlet property="testView" destination="gl0-rv-Vm6" id="qnN-0F-rNn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -79,12 +80,56 @@
                         <constraint firstAttribute="trailing" secondItem="7XJ-lG-RGW" secondAttribute="trailing" id="pk2-hv-ZR9"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl0-rv-Vm6" userLabel="test View">
+                    <rect key="frame" x="0.0" y="537" width="375" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiJ-8F-4aU">
+                            <rect key="frame" x="10" y="10" width="355" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="WFX-WI-DeG"/>
+                            </constraints>
+                            <state key="normal" title="登录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="test_login:" destination="-1" eventType="touchUpInside" id="3i8-9s-YLc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r3-fa-6Xd">
+                            <rect key="frame" x="10" y="70" width="355" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="wwi-t6-yR8"/>
+                            </constraints>
+                            <state key="normal" title="联系赵医生">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="test_goIM:" destination="-1" eventType="touchUpInside" id="sno-u8-1NA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xiJ-8F-4aU" secondAttribute="trailing" constant="10" id="3rA-XI-Egn"/>
+                        <constraint firstItem="xiJ-8F-4aU" firstAttribute="top" secondItem="gl0-rv-Vm6" secondAttribute="top" constant="10" id="4dj-wo-aFg"/>
+                        <constraint firstItem="xiJ-8F-4aU" firstAttribute="leading" secondItem="gl0-rv-Vm6" secondAttribute="leading" constant="10" id="QAQ-KN-R9I"/>
+                        <constraint firstAttribute="height" constant="120" id="REJ-VO-Fut"/>
+                        <constraint firstAttribute="trailing" secondItem="6r3-fa-6Xd" secondAttribute="trailing" constant="10" id="XeC-es-i2I"/>
+                        <constraint firstItem="6r3-fa-6Xd" firstAttribute="leading" secondItem="gl0-rv-Vm6" secondAttribute="leading" constant="10" id="czd-f0-77z"/>
+                        <constraint firstItem="6r3-fa-6Xd" firstAttribute="top" secondItem="xiJ-8F-4aU" secondAttribute="bottom" constant="10" id="iB8-Hk-ju4"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="gl0-rv-Vm6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7gJ-oV-qae"/>
+                <constraint firstAttribute="trailing" secondItem="gl0-rv-Vm6" secondAttribute="trailing" id="AU5-s2-FS7"/>
                 <constraint firstItem="6L6-Z3-fy0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cyg-Ta-mMH"/>
                 <constraint firstAttribute="bottom" secondItem="6L6-Z3-fy0" secondAttribute="bottom" id="DrF-qI-w60"/>
                 <constraint firstItem="6L6-Z3-fy0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yw0-6r-T5M"/>
+                <constraint firstAttribute="bottom" secondItem="gl0-rv-Vm6" secondAttribute="bottom" constant="10" id="aza-LW-LTA"/>
                 <constraint firstAttribute="trailing" secondItem="6L6-Z3-fy0" secondAttribute="trailing" id="hO6-Ox-51B"/>
             </constraints>
             <point key="canvasLocation" x="-88.5" y="-106.5"/>

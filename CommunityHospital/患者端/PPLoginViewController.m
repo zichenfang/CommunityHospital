@@ -54,8 +54,6 @@
     self.passWordView.hidden = NO;
     self.VCodeView.hidden = YES;
     self.forgetPasswordBtn.hidden = NO;
-
-    
 }
 //MARK:切换到短信验证码登录
 - (IBAction)loginWithVCode:(id)sender {
@@ -74,10 +72,10 @@
 //MARK:点击登录按钮
 - (IBAction)loginBtnTouched:(id)sender {
     [self.view endEditing:YES];
-    if ([self.phoneTF.text isValidateMobile] == NO) {
-        [self.view makeToast:@"请输入11位手机号" duration:2 position:CSToastPositionCenter];
-        return;
-    }
+//    if ([self.phoneTF.text isValidateMobile] == NO) {
+//        [self.view makeToast:@"请输入11位手机号" duration:2 position:CSToastPositionCenter];
+//        return;
+//    }
     //密码登录验证表单
     if (self.login_password_Btn.selected ==YES) {
         if (self.passWordTF.text.absoluteString.length==0) {

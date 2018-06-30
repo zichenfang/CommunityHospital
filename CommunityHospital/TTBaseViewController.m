@@ -39,7 +39,7 @@
     //背景
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     //标题颜色
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor darkGrayColor]}];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 }
 - (void)viewWillAppear:(BOOL)animated{

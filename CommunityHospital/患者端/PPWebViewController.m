@@ -9,12 +9,16 @@
 #import "PPWebViewController.h"
 #import <WebKit/WebKit.h>
 #import "PPLoginIndexViewController.h"
+#import <RongIMKit/RongIMKit.h>
+#import "PPConversationViewController.h"
 
 @interface PPWebViewController ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
 @property (strong, nonatomic) WKWebView *webView;
 @property (strong, nonatomic) CALayer *progressLayer;
 //网页加载失败时，显示此view
 @property (strong, nonatomic) IBOutlet UIView *refershView;
+
+@property (strong, nonatomic) IBOutlet UIView *testView;
 
 @end
 
@@ -65,7 +69,24 @@
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshWeb) name:@"refreshWeb" object:nil];
     [self refreshWeb];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(test)];
+    [self.view bringSubviewToFront:self.testView];
+    
+}
+
+- (IBAction)test_login:(id)sender {
+    [self login];
+}
+- (IBAction)test_goIM:(id)sender {
+    [self goIMWithTargetID:@""];
+}
+
+- (void)goIMWithTargetID :(NSString *)targetID{
+    PPConversationViewController *chat = [[PPConversationViewController alloc] initWithConversationType:ConversationType_PRIVATE targetId:targetID];
+    //设置聊天会话界面要显示的标题
+    chat.title = @"在线问诊";
+    //显示聊天会话界面
+    [self.navigationController pushViewController:chat animated:YES];
+
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
