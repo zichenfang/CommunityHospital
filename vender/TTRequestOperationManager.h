@@ -23,11 +23,8 @@
 //MARK: ●患者端用户注册页面URL
 #define URL_PATIENT_REGIST  @"http://bh.52pinka.com/m-Wap/Register"
 //MARK: ●患者端主页面页面URL
-//#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/Login/Entrance"//用来测试调起原生登录页面
-#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/"
-
-
-
+#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/Login/Entrance"//用来测试调起原生登录页面
+//#define URL_PATIENT_MAIN  @"http://bh.52pinka.com/m-Wap/"
 //MARK: ●患者端人脸登录页面URL
 #define URL_PATIENT_LOGIN_FACE  @"http://www.baidu.com/"
 //MARK: ●患者端找回密码页面URL
@@ -36,16 +33,20 @@
 #define URL_PATIENT_GET_MSG_CODE  @"api/Login/SendPhoneCheckCode"
 //MARK: ●患者验证码登录 API
 #define URL_PATIENT_LOGIN_VCODE  @"api/Login/getUser"
+//MARK: ●患者端 报告单 URL
+#define URL_PATIENT_BAOGAODAN  @"http://www.baidu.com/"
+//MARK: ●患者端 健康数据 URL
+#define URL_PATIENT_JIANKANGSHUJU @"http://www.baidu.com/"
 
 
 //MARK: ●医生端用户注册页面URL
-#define URL_DOCTOR_REGIST  @""
+#define URL_DOCTOR_REGIST  @"https://ssl.zc.qq.com/v3/index-chs.html?from=pt"
 //MARK: ●医生端主页面 页面URL
-#define URL_DOCTOR_MAIN  @""
+#define URL_DOCTOR_MAIN  @"https://www.baidu.com/"
 //MARK: ●医生端人脸登录 页面URL
-#define URL_DOCTOR_LOGIN_FACE  @"http://www.baidu.com/"
+#define URL_DOCTOR_LOGIN_FACE  @"https://faceid.com/"
 //MARK: ●医生端找回密码 页面URL
-#define URL_DOCTOR_RESET_PASSWORD  @"http://www.baidu.com/"
+#define URL_DOCTOR_RESET_PASSWORD  @"https://aq.qq.com/cn2/index"
 //MARK: ●医生端登录 API
 #define URL_PATIENT_LOGIN_USERNAME_PASSWORD  @""
 

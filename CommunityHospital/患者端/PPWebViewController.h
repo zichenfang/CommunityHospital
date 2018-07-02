@@ -6,10 +6,10 @@
 //  Copyright © 2018年 方子辰. All rights reserved.
 //
 
-#import "TTBaseViewController.h"
+#import "TTBaseWebViewController.h"
 
-@interface PPWebViewController : TTBaseViewController
-@property (nonatomic,strong) NSString *url;
-@property (nonatomic,assign) BOOL navigaitonBarHidden;
+@interface PPWebViewController : TTBaseWebViewController
+@property (nonatomic,strong)TTBlock baoGaoDanHandler;
+@property (nonatomic,strong)TTBlock jianKangShuJuHandler;
 
 @end

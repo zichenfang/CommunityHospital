@@ -34,14 +34,20 @@
     //医生（医生端为强制登录）
     if (ROLE == 1){
         [WXApi registerApp:WechatAppID_Docotrs];
-
+        //测试登录
+        [TTUserInfoManager setLogined:YES];
         if ([TTUserInfoManager logined] == YES) {
             //进入医生首页
             DDWebViewController *vc = [[DDWebViewController alloc] init];
+            vc.navigaitonBarHidden = YES;
+            vc.url = URL_DOCTOR_MAIN;
+            self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
         }
         else{
-            
+            DDLoginViewController *vc = [[DDLoginViewController alloc] init];
+            self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
         }
+
     }
     //患者（无需强制登录）
     else{
@@ -105,7 +111,7 @@
 //        NSString *code = [responseJsonObject string_ForKey:@"code"];
 //        NSString *msg = [responseJsonObject string_ForKey:@"msg"];
 //        NSDictionary *result = [responseJsonObject dictionary_ForKey:@"result"];
-//        
+//
 //        if ([code isEqualToString:@"1"])//
 //        {
 //            user.portraitUri =[result string_ForKey:@"member_avatar"];
@@ -116,7 +122,7 @@
 //            [ProgressHUD showError:msg];
 //        }
 //        return completion(user);
-//        
+//
 //    } Failure:^(NSError *error) {
 //        return completion(user);
 //    }];

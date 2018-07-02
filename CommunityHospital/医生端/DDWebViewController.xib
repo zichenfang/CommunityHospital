@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DDWebViewController">
             <connections>
+                <outlet property="testView" destination="Gvr-HU-Wir" id="Ho3-Kl-I33"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,85 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gvr-HU-Wir" userLabel="test View">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-NB-gTC">
+                            <rect key="frame" x="10" y="10" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PU9-GJ-yTz"/>
+                            </constraints>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-MJ-Zof">
+                            <rect key="frame" x="192.5" y="10" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="t8I-HV-abK"/>
+                            </constraints>
+                            <state key="normal" title="在线诊疗">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="test_zaiXianZhenLiao:" destination="-1" eventType="touchUpInside" id="7c4-3e-Bef"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-PE-xyq">
+                            <rect key="frame" x="10" y="70" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Yfg-ch-9In"/>
+                            </constraints>
+                            <state key="normal" title="联系张女士">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="test_goIM:" destination="-1" eventType="touchUpInside" id="O50-68-Hx7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRm-vx-smM">
+                            <rect key="frame" x="192.5" y="70" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="lOJ-I5-TzR"/>
+                            </constraints>
+                            <state key="normal" title="发送推荐药物">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="test_tuiJianYaoWu:" destination="-1" eventType="touchUpInside" id="LAO-fk-Dh7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9Fs-NB-gTC" firstAttribute="leading" secondItem="Gvr-HU-Wir" secondAttribute="leading" constant="10" id="5pT-Hy-ae0"/>
+                        <constraint firstItem="GRm-vx-smM" firstAttribute="top" secondItem="9Fs-NB-gTC" secondAttribute="bottom" constant="10" id="CKE-cj-urq"/>
+                        <constraint firstItem="9Fs-NB-gTC" firstAttribute="width" secondItem="vbQ-MJ-Zof" secondAttribute="width" id="E18-9h-phv"/>
+                        <constraint firstItem="GRm-vx-smM" firstAttribute="leading" secondItem="OyK-PE-xyq" secondAttribute="trailing" constant="10" id="XTf-mr-rRd"/>
+                        <constraint firstItem="OyK-PE-xyq" firstAttribute="top" secondItem="9Fs-NB-gTC" secondAttribute="bottom" constant="10" id="YYN-fe-R2B"/>
+                        <constraint firstAttribute="trailing" secondItem="vbQ-MJ-Zof" secondAttribute="trailing" constant="10" id="ZA0-r3-ew5"/>
+                        <constraint firstItem="vbQ-MJ-Zof" firstAttribute="leading" secondItem="9Fs-NB-gTC" secondAttribute="trailing" constant="10" id="hhq-pK-ocW"/>
+                        <constraint firstItem="OyK-PE-xyq" firstAttribute="leading" secondItem="Gvr-HU-Wir" secondAttribute="leading" constant="10" id="pjh-0a-pJz"/>
+                        <constraint firstAttribute="height" constant="150" id="rPL-Wg-6mT"/>
+                        <constraint firstItem="9Fs-NB-gTC" firstAttribute="top" secondItem="Gvr-HU-Wir" secondAttribute="top" constant="10" id="tz1-1b-ifK"/>
+                        <constraint firstItem="GRm-vx-smM" firstAttribute="width" secondItem="OyK-PE-xyq" secondAttribute="width" id="xdS-0A-52w"/>
+                        <constraint firstItem="vbQ-MJ-Zof" firstAttribute="top" secondItem="Gvr-HU-Wir" secondAttribute="top" constant="10" id="zNa-2J-aSz"/>
+                        <constraint firstAttribute="trailing" secondItem="GRm-vx-smM" secondAttribute="trailing" constant="10" id="zzQ-nR-BTa"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="33" y="62"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gvr-HU-Wir" secondAttribute="trailing" id="Qs0-NV-S1y"/>
+                <constraint firstItem="Gvr-HU-Wir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SAy-g0-imL"/>
+                <constraint firstAttribute="bottom" secondItem="Gvr-HU-Wir" secondAttribute="bottom" id="gMV-x0-Ypv"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="104"/>
         </view>
     </objects>
 </document>
